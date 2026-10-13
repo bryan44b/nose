@@ -84,8 +84,8 @@ color: #4a3b32;
 }
 
 .rockola-body {
-    background-color: #1a1a1a; /* Fondo oscuro */
-    color: #F0F0F0;
+    background-color: #F0F0F0; /* Mismo fondo claro que las otras páginas */
+    color: #333333; /* Letra oscura para que se lea bien sobre el fondo claro */
     text-align: center;
     font-family: sans-serif;
     padding: 20px;
@@ -101,15 +101,15 @@ color: #4a3b32;
 }
 
 .mood-btn {
-    background-color: #8bcff8; 
-    color: #1a1a1a;
+    background-color: #8bcff8; /* El azul claro del tema */
+    color: #1a1a1a; /* Letra oscura en los botones */
     border: none;
     padding: 15px 20px;
     border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(139, 207, 248, 0.3);
+    box-shadow: 0 4px 10px rgba(139, 207, 248, 0.5); /* Sombra azuladita suave */
     transition: transform 0.1s;
 }
 
@@ -122,6 +122,7 @@ color: #4a3b32;
     margin: 0 auto;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
-    display: none; /* Se mantiene oculto hasta que presione un botón */
+    /* Sombra mucho más sutil y clara para que no se vea pesada */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); 
+    display: none; /* Se mantiene oculto al inicio */
 }
